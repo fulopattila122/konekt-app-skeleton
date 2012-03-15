@@ -5,7 +5,7 @@ error_reporting(-1);
 ini_set('display_errors', 1);
 */
 
-require_once ('app/Konekt/Framework/Konekt.php');
+require_once ('app/code/Konekt/Framework/Konekt.php');
 
    try {
       $response = Konekt::app()->getRouter()->dispatch(basename(__FILE__));

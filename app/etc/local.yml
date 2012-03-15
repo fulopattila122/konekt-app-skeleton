@@ -1,0 +1,57 @@
+# Konekt Framework local configuration file
+# Please note to use the following replacement table for db connection values:
+#  (in case dbhost, database, username, password contains any of them
+#  ------------------------
+#	Character	-> Replacement
+#  ========================
+#      :           %3a
+#      /           %2f
+#      @           %40
+#      +           %2b
+#      (           %28
+#      )           %29
+#      ?           %3f
+#      =           %3d
+#      &           %26
+#  ========================
+core:
+   dateFormat: "%Y.%m.%d"
+   dateTimeFormat: "%Y.%m.%d %H:%M"
+   contentDir: media
+   cacheDir: cache
+   # If you want to move the app directory from its default location,
+   # then you have to manually specify the root dir (DocumentRoot)
+   # as relative to the appdir eg.: ../ or ../www/. Default is ../
+   # eg.:
+   #rootDir: "../httpdocs/"
+   #set nosql to true if you don't want to use db connection
+   nosql: true
+   modules:
+      Konekt_Framework_Core:
+      Konekt_Cms_User:
+      Konekt_Cms_Comment:
+      Konekt_Cms_Blog:
+      Konekt_Cms_Image:
+#      Konekt_Cms_Catalog:
+      Vendor_Hello_World:
+   db:
+      host: localhost
+      database: dbname
+      username: username
+      password: passwd
+      type: mysql
+   #You have to have these templates somewhere implemented in order to show custom error messages
+   errordocs:
+      404: 404.tpl
+      500: 500.tpl
+routing:
+   /: vendor/hello/world/default/index
+konekt:
+   cms:
+      image:
+         directory: images
+         defaultWidth: 850
+         defaultHeight: 550
+         defaultThumbnailWidth: 170
+         defaultThumbnailHeight: 128
+
