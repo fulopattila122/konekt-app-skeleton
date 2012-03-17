@@ -4,8 +4,9 @@ class Vendor_Hello_World_Controller_Default extends Konekt_Framework_Core_Contro
 {
    public function indexAction($params)
    {
-      Konekt::app()->getResponse()->setAttribute('title', 'Hello');
-      Konekt::app()->getResponse()->setTemplate('hello.tpl');
+      $response = Konekt::app()->getResponse();
+      $response->setAttribute('title', "Hello, You're Konekted");
+      $response->setTemplate('hello.tpl');
       
       return true;
    }
