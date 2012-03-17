@@ -35,7 +35,8 @@
    <link media="screen and (min-width: 361px) and (max-width: 767px)" href="/css/mobile.css" rel='stylesheet' type='text/css'>
    <link media="screen and (max-width: 360px)" href="/css/mobile-small.css" rel='stylesheet' type='text/css'>
    
-   <script src="js/jquery-1.6.2-min.js"></script>
+   <!-- Uncomment if you want to user jquery -->
+   <!--script src="/js/jquery-1.6.2-min.js"></script-->
    
    <!--Uncomment if using the flexslider-->
    <!--script src="js/jquery.flexslider-min.js"></script>
