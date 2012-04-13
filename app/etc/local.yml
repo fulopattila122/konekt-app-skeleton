@@ -19,6 +19,7 @@ core:
    dateTimeFormat: "%Y.%m.%d %H:%M"
    contentDir: media
    cacheDir: cache
+   tmpDir: tmp
    # If you want to move the app directory from its default location,
    # then you have to manually specify the root dir (DocumentRoot)
    # as relative to the appdir eg.: ../ or ../www/. Default is ../
